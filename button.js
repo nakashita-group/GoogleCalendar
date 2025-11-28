@@ -13,7 +13,7 @@ document.getElementById("insert_button").addEventListener("click", async () => {
     start: strYMD,
     end: endYMD,
   };
-  const res = await fetch("http://localhost:3000/insert", {
+  const res = await fetch("http://googlecalendar-orpin.vercel.app/insert", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload)
