@@ -11,6 +11,7 @@ app.post('/insert', async (req, res) => {
     //パラメータ取得
     const { title, description, date, start, end } = req.body;
 
+    alert("insert.js passed")
     try {
         // The scope for reading calendar events.
         const SCOPES = ['https://www.googleapis.com/auth/calendar'];
