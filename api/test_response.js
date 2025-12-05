@@ -1,3 +1,7 @@
+export const config = {
+  runtime: "nodejs",   // ← これを必ず追加
+};
+
 export default function test_response(req,res){
   console.log("controller fired")
   const credential = {
