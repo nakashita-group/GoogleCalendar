@@ -34,7 +34,7 @@
         </div>
       </div>
       <button class="button" id="insert_button">フロントからリクエスト</button>
-      <br/>
+      <br />
       <button class="button" id="button_to_server">サーバーサイドにリクエスト</button>
       <div id="UserName"></div>
       <div id="displayRes"></div>
@@ -70,7 +70,6 @@
      * Callback after api.js is loadedCallback after api.js is loaded.
      */
     function gapiLoaded() {
-      alert("gapiLoaded executed")
       gapi.load('client', initializeGapiClient);
     }
 
@@ -180,13 +179,11 @@
       document.getElementById('content').innerText = output;
     }
   </script>
-  
+
   <script src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
   <script src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
   <script src="button.js"></script>
   <script src="request.js"></script>
-  
-
 </body>
 
 </html>
