@@ -14,5 +14,5 @@ export default function test_response(req,res){
   };
 
   console.log("client_id",credential.client_id);
-  res.status(200).json(credential);
+  res.json({message:"hello world"});
 }
