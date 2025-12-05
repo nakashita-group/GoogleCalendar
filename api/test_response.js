@@ -1,11 +1,8 @@
-export const config = {
-  runtime: "nodejs",   // ← これを必ず追加
-};
-
 export default function test_response(req,res){
   console.log("controller fired")
   const credential = {
     client_secret: process.env.client_secret,
+    client_secret2:process.env.CLIENT_SECRET,
     auth_provider_x509_cert_url: process.env.AUTH_PROVIDER_X509_CERT_URL,
     token_uri: process.env.TOKEN_URI,
     auth_uri: process.env.AUTH_URI,
@@ -14,5 +11,6 @@ export default function test_response(req,res){
   };
 
   console.log("client_id",credential.client_id);
+  console.log("CLIENT_SECRET",credential.client_secret2);
   res.json({message:"hello world"});
 }
