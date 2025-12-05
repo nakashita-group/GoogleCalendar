@@ -1,4 +1,5 @@
 export default function test_response(req,res){
+  console.log("controller fired")
   const credential = {
     client_secret: process.env.CLIENT_SECRET,
     auth_provider_x509_cert_url: process.env.AUTH_PROVIDER_X509_CERT_URL,
