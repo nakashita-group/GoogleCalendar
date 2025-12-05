@@ -1,0 +1,63 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.header_title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.button {
+    background-color: khaki;
+    border-radius: 8px;
+    margin: 10px 0px 10px 0px;
+    padding: 2px;
+    width: 50px;
+}
+
+.image {
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+}
+
+.title {
+    width: 200px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.title_label{
+    width: 200px;
+    text-align: left;
+}
+
+.description {
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.from_to_datetime {
+    flex-direction: row;
+}
+
+.date {
+    border-radius: 8px;
+    margin: 10px 0px 10px 0px;
+    padding: 2px;
+}
+
+.time {
+    border-radius: 8px;
+}
+
+.wave {
+    margin: 15px;
+}
+
+.body_style {
+    text-align: center;
+}
