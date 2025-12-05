@@ -8,6 +8,6 @@ export default function test_response(req,res){
     client_id: process.env.CLIENT_ID
   };
 
-  console.log(credential.client_id);
+  console.log("client_id",credential.client_id);
   res.status(200).json(credential);
 }
